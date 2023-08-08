@@ -46,6 +46,8 @@ def printN(ct, name, time, location, file):
                 name = a
             elif a in ['B', 'b']:
                 name = '\\textit{\\color{white}   aaaaaaaaaaa}'
+            else:
+                name = name.capitalize()
         #name = 'Not In List'
     ct = str(ct)
     while len(ct)<3:
@@ -55,6 +57,7 @@ def printN(ct, name, time, location, file):
     myLog('\\textbf{\\textit{%s}} \\\\'%name, end=' ', file=file)
     myLog('%s \\\\'%time, end=' ', file=file)
     location = location.replace("\"", "")
+    location = location.replace("-", " ")
     location = location.split(',')
     acc = 0
     st = ''
