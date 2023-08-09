@@ -170,7 +170,7 @@ if __name__ == '__main__':
     parser.add_argument('--txt', type=str, default='', help="--txt <name.txt> -o <name.txt> #split by tab or |")
     parser.add_argument('-o', type=str, default='output.txt', help="output file")
     parser.add_argument('--ct', type=str, default='x', help="ct")
-    parser.add_argument('--name', type=str, default='\\textit{\\color{white}   aaaaaaaaaaa}', help="name (b or B for blank)")
+    parser.add_argument('--name', type=str, default='', help="name (b or B for blank)")
     parser.add_argument('--time', type=str, default='\\textit{\\color{white}   aaaaaaaaaaa}', help="time")
     parser.add_argument('--loc', type=str, default='\\textit{\\color{white}   aaaaaaaaaaa}', help="location")
 
